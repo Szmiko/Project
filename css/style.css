@@ -1,0 +1,27 @@
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.container {
+	background: blue;
+	padding: 20px;
+}
+
+.container div {
+	height: 200px;
+	min-width: 25%;
+	float: left;
+}
+
+.one {
+	background-color: yellow;
+}
+
+.two {
+	background-color: red;
+}
