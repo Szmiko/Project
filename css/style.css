@@ -1,39 +1,25 @@
-body {
-	margin: 0;
-}
-
-div {
+* {
 	box-sizing: border-box;
-	border: 2px solid black;
-	padding: 20px;
-	text-align: center;
 }
 
 .container {
-	padding: 0;
-	position: relative;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 2px solid black;
+	padding: 5px;
 }
 
-.header {
-	border-color: green;
+.row {
+	border: 2px solid red;
+	overflow: auto;
 }
 
-.nav {
-	border-color: yellow;
-	position: absolute;
-	width: 200px;
+[class*="col"] {
+	border-color: blue;
+	padding: 5px;
+	float: left;
 }
 
-.section {
-	border-color: brown;
-	margin-left: 200px;
-}
-
-.footer {
-	border-color: gray;
-	z-index: 10;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
+.col-4 {width: calc((100% / 12) * 4)}
+.col-5 {width: calc((100% / 12) * 5)}
+.col-7 {width: calc((100% / 12) * 7)}
