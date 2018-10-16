@@ -1,29 +1,30 @@
-body {
-	margin: 0;
-}
-
 div {
-	box-sizing: border-box;
-}
-
-.header {
-	border: 5px solid blue;
-	height: 5vh;
-}
-
-.nav {
-	width: 6%;
-	border: 5px solid green;
-	height: 95vh;
-	float: left;
-	display: inline-block;
-}
-
-.one, .two {
 	border: 5px solid black;
-	float: left;
-	height: 95vh;
-	width: 47%;
-	padding: 10px;
-	overflow-y: auto;
+	padding: 15px;
+}
+
+.fixed {
+	border-color: green;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+.static {
+	position: static;
+	border-color: yellow;
+	height: 500px;
+	padding-top: 50px;
+}
+
+.relative {
+	border-color: red;
+	position: relative;
+	top: -10px;
+}
+
+.absolute {
+	position: absolute;
+	top: 40px;
 }
