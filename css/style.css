@@ -2,24 +2,36 @@
 	box-sizing: border-box;
 }
 
+body {
+	margin: 0;
+	background-color: gray;
+}
+
 .container {
-	max-width: 600px;
-	margin: 0 auto;
-	border: 2px solid black;
-	padding: 5px;
+	max-width: 500px;
+	margin: 20px auto;
+	padding: 20px;
+	background-color: white;
 }
 
 .row {
-	border: 2px solid red;
 	overflow: auto;
 }
 
-[class*="col"] {
-	border-color: blue;
+.col {
 	padding: 5px;
 	float: left;
 }
 
+.col-3 {width: calc((100% / 12) * 3)}
 .col-4 {width: calc((100% / 12) * 4)}
 .col-5 {width: calc((100% / 12) * 5)}
 .col-7 {width: calc((100% / 12) * 7)}
+.col-9 {width: calc((100% / 12) * 9)}
+
+@media (max-width: 468px) {
+	.col {
+		float: none;
+		width: 100%;
+	}
+}
