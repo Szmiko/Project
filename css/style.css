@@ -1,30 +1,28 @@
-div {
-	border: 5px solid black;
-	padding: 15px;
-}
-
-.fixed {
-	border-color: green;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-}
-
-.static {
-	position: static;
-	border-color: yellow;
-	height: 500px;
-	padding-top: 50px;
-}
-
-.relative {
-	border-color: red;
+.container {
 	position: relative;
-	top: -10px;
 }
 
-.absolute {
+.container div {
 	position: absolute;
-	top: 40px;
+	width: 200px;
+	height: 200px;
+}
+
+.one {
+	background-color: green;
+	z-index: 3;
+}
+
+.two {
+	background-color: blue;
+	left: 100px;
+	top: 100px;
+	z-index: 2;
+}
+
+.three {
+	background-color: yellow;
+	z-index: 1;
+	left: 200px;
+	top: 200px;
 }
