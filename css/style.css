@@ -1,11 +1,29 @@
-.human {
-	width: 200px;
-	float: left;
-	margin: 10px;
+body {
+	margin: 0;
 }
 
-.shoe {
-	width: 200px;
-	float: right;
-	margin: 10px;
+div {
+	box-sizing: border-box;
+}
+
+.header {
+	border: 5px solid blue;
+	height: 5vh;
+}
+
+.nav {
+	width: 6%;
+	border: 5px solid green;
+	height: 95vh;
+	float: left;
+	display: inline-block;
+}
+
+.one, .two {
+	border: 5px solid black;
+	float: left;
+	height: 95vh;
+	width: 47%;
+	padding: 10px;
+	overflow-y: auto;
 }
