@@ -1,46 +1,92 @@
-* {
-	box-sizing: border-box;
+@import url(https://fonts.googleapis.com/css?family=Mali);
+
+.clearfix:before,
+.claerfix:after {
+	content: " ";
+	clear: both;
+	display: block;
 }
 
 body {
-	background-color: lightgreen;
+	color: red;
+	font-family: 'Mali', sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
-img {
-	width: 100%;
-	height: 200px;
+.hero {
+	height: 350px;
+	background: url(https://images.unsplash.com/photo-1539860033517-9dcef150c133?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ec5ac6ffaf5ab9d7513fe8f4bc64ad49&auto=format&fit=crop&w=1050&q=80);
+	background-size: cover;
+}
+
+h1 {
+	padding-top: 100px;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	text-transform: uppercase;
+	margin: 0;
 }
 
 .container {
-	max-width: 800px;
-	margin: 20px auto;
-	padding: 20px;
-	background-color: white;
+	max-width: 700px;
+	width: 80%;
+	margin: 0 auto;
 }
 
-.header {
+.main, .sidebar {
+	float: right;
+}
+
+.main {
+	width: 80%;
+}
+
+.sidebar {
+	width: 20%;
+}
+
+.col {
+	float: left;
+	width: 25%;
+}
+
+img .main {
+	width: 100%;
+}
+
+.social-media {
+	position: fixed;
+	top: calc(50vh - 65px);
+	left: 10px;
+	width: 40px
+}
+
+.social-media i {
+	width: 40px;
+	height: 40px;
+	font-size: 20px;
+	border-radius: 50%;
+	margin-bottom: 5px;
+	cursor: pointer;
+	background: gray;
+	line-height: 40px;
 	text-align: center;
-	padding: 30px;
 }
 
-.navigation {
-	background-color: gray;
-	height: 75vh;
-	float: left;
+a .sidebar {
+	display: block;
 }
 
-.row {
-	overflow: auto;
-	margin: 0 -5px;
+.footer {
+	height: 75px;
+	background: lightblue;
 }
 
-.col-3 {
-	width: calc((100% / 12) * 3);
-}
-
-.col-4 {
-	width: calc((100% / 12) * 4);
-	float: left;
-	padding: 0 5px;
-	margin-bottom: 10px;
+p .footer {
+	margin: center;
+	color: blue;
+	padding-top: 30px;
 }
