@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function() {
 	var span = $('div').find('span');
 	span.each(function(index, element) {
 		if(index % 2 == 0) {
