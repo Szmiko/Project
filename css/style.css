@@ -60,6 +60,7 @@ footer {
 
 .medium-line {
 	line-height: 30px;
+	white-space: nowrap;
 }
 
 .hight-line {
