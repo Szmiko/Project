@@ -16,7 +16,7 @@ header {
 	background: url('https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
 	height: 300px;
 	line-height: 150px;
-	font-family: 'Skranji', sans-serif; 
+	font-family: 'Skranji', sans-serif;
 }
 
 header h2 {
@@ -45,14 +45,27 @@ nav a {
 
 nav a:hover {
 	color: black;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: green;
 }
 
 main {
 	background: gray;
-	border-radius: 1px;
+	border-radius: 10px;
 	padding: 15px;
 	max-width: 1000px;
-	margin: 0 auto;
+	margin: 20px auto;
+	box-shadow: 5px 4px 30px white;
+}
+
+main a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	padding: 10px;
 }
 
 footer {
@@ -62,3 +75,40 @@ footer {
 	color: white;
 	font-size: bold;
 }
+
+input, textarea {
+	display: block;
+	width: 50%;
+	border-radius: 4px;
+	border: 1px solid black;
+	padding: 10px 5px;
+	margin-bottom: 10px;
+	resize: none;
+}
+
+button, input:focus, textarea:focus {
+	border: 2px solid red;
+}
+
+button {
+	background: yellow;
+	color: red;
+	padding: 10px 15px;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+button:hover, nav a:hover {
+	background: white;
+	text-decoration: none;
+}
+
+footer a, button:active {
+	background: gray;
+	text-align: center;
+	color: pink;
+}
+ footer, h1 {
+ 	margin: 0;
+ 	padding: 20px;
+ }
