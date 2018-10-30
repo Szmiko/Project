@@ -1,63 +1,64 @@
-@import url('https://fonts.googleapis.com/css?family=Changa');
+@import url('https://fonts.googleapis.com/css?family=Skranji')
 
 * {
 	box-sizing: border-box;
 }
 
 body {
-	max-width: 900px;
 	margin: 0 auto;
-	background: lightgray;
-	font-family: Changa, sans-serif;
+	max-width: 1200px;
+	background: lightgreen;
+}
+
+header {
+	margin: 0 auto;
+	padding: 0;
+	background: url('https://images.pexels.com/photos/1183099/pexels-photo-1183099.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
+	height: 300px;
+	line-height: 150px;
+	font-family: 'Skranji', sans-serif; 
+}
+
+header h2 {
+	padding: 40px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	font-size: 40px;
+	text-shadow: 20px 15px 6px blue;
 }
 
 nav {
-	background: lightblue;
-	line-height: 50px;
+	height: 60px;
+	background: green;
 	text-align: center;
+	padding-top: 20px;
 }
 
 nav a {
 	text-decoration: none;
-	padding: 0 60px;
-	color: blue;
-	cursor: pointer;
-	display: inline-block;
-}
-
-header {
-	margin: 0;
-	padding: 0;
-	height: 300px;
-	background: url('https://images.pexels.com/photos/314380/pexels-photo-314380.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
-}
-
-header {
-	position: relative;
-}
-
-header h1 {
-	position: absolute;
-	top: 100px;
-	left: 350px;
 	color: white;
+	padding: 0 40px;
+	line-height: 30px;
+	font-size: 20px;
 }
 
-.content {
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 10px;
-	border-radius: 5%;
-	background: white;
+nav a:hover {
+	color: black;
+}
+
+main {
+	background: gray;
+	border-radius: 1px;
+	padding: 15px;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 footer {
-	background: lightblue;
-	line-height: 40px;
 	text-align: center;
-	margin: 0;
-}
-
-a:hover {
-	color: red;
+	padding: 20px 0; 
+	background: green;
+	color: white;
+	font-size: bold;
 }
