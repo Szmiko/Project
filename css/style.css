@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Spicy+Rice');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab')
 
 * {
 	box-sizing: border-box;
@@ -6,119 +6,60 @@
 
 body {
 	margin: 0 auto;
-	font-family: 'Spicy Rice', sans-serif;
+	padding: 0;
+	width: 1200px;
+	background: lightblue;
+	font-family: 'Josefin Slab', sans-serif;
 }
 
 header {
-	background: url('https://images.pexels.com/photos/1536314/pexels-photo-1536314.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
+	margin: 0 auto;
+	padding: 0;
+	width: 100%;
 	height: 300px;
+	background: url('https://images.pexels.com/photos/1536608/pexels-photo-1536608.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
 	text-align: center;
+	padding-top: 70px;
+	margin-bottom: 30px;
 }
 
-header h1 {
-	margin-top: 0;
-	padding: 100px 0;
-	color: white;
-	font-size: 40px;
-}
-
-nav {
-	padding: 10px;
-	height: 50px;
-	background: gray;
-	text-align: center;
-	border: 2px solid black;
-	margin-bottom: 20px;
-}
-nav a {
-	padding: 0 35px;
-	line-height: 30px;
-	color: white;
-	letter-spacing: 6px;
-	text-decoration: none;
-}
-
-.content {
+.shadow {
+	padding: 5px;
+	height: 50%;
 	margin: 0 auto;
-	padding: 25px;
-	width: 800px;
-	background: gray;
-	border-radius: 15px;
-	text-align: justify;
-	height: 700px; ;
-}
-
-article {
-	width: 300px;
-	border: 1px solid white;
-	margin: 20px 30px;
-	padding: 10px;
-	background: white;
-	border-radius: 15px;
-	float: right;
-	height: 250px;
-}
-
-.one {
-	overflow: hidden;
-}
-
-.two {
-	overflow: scroll;
-}
-
-.three {
-	overflow: auto;
-}
-
-.four {
-	overflow: visible;
-}
-
-.units {
-	border: 1px solid black;
-	padding: 20px 0;
-	margin: 0 auto;
-	margin-top: 80px;
-	height: 200px;
-	width: 800px;
-	background: gray;
-}
-
-.px {
-	width: 25px;
-	background: white;
-}
-
-.percentage {
-	width: 25%;
-	background: white;
-}
-
-.em {
-	width: 25em;
-	background: white;
-}
-
-.rem {
-	width: 25rem;
-	background: white;
-}
-
-.vw {
-	width: 25vw;
-	background: white;
-}
-
-.vh {
-	width: 25vh;
-	background: white;
-}
-footer {
-	margin-top: 20px;
-	height: 50px;
+	width: 50%;
+	color: white;
 	background: black;
-	color: gray;
+	opacity: 0.7;
+}
+
+main {
 	text-align: center;
-	line-height: 30px;
+	background: white;
+	margin: 0 auto;
+	padding: 15px;
+	width: 80%;
+	margin-bottom: 35px;
+	}
+
+main i {
+	margin: 15px 0;
+}
+
+footer {
+	font-size: 20px;
+	padding: 15px 0;
+	text-align: center;
+	width: 100%;
+	height: 50px;
+	background: white;
+	color: black;
+}
+
+button {
+	border: 2px solid green;
+	background: green;
+	color: white;
+	padding: 8px;
+	width: 80px;
 }
