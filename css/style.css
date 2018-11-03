@@ -30,6 +30,10 @@ header h1 {
 	text-align: center;
 	width: 90%;
 	border: 2px solid red;
+	height: 60px;
+	background: white;
+	justify-content: center;
+	align-items: center;
 }
 
 article {
@@ -50,9 +54,24 @@ footer {
 	color: white;
 }
 
-.box {
+.box1 {
 	border: 1px solid black;
+	text-align: center;
+	font-weight: 700;
+	height: 30px;
+	width: 30px;
+	background: black;
+}
+
+.exercise2 {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border: 2px solid yellow;
+	display: flex;
+	height: 60px;
 	background: white;
-	flex: 1;
-	padding: 20px;
+	justify-content: center;
+	align-items: center;
 }
