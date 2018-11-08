@@ -36,65 +36,21 @@ main > p {
 	font-size: 22px;
 }
 
-a {
-	text-decoration: none;
-}
-
 ul {
+	margin: 0;
+	padding: 0;
 	list-style-type: none;
 }
 
-.horizontal-menu {
-	text-align: center;
-	width: 400px;
-	margin: 0 auto;
-}
-
-.horizontal-menu li {
-	margin-top: 10px;
-	font-size: 20px;
-	border: 1px dotted;
-	padding: 15px 30px;
-	position: relative;
-	display: inline-block;
-}
-
-.dropdown {
-	position: absolute;
-	top: 55px;
-	left: -5px;
-	background: gray;
-	text-align: center;
-	margin: 0;
-	padding: 0;
-	box-shadow: 1px 1px 1px black;
-	display: none;
-	line-height: 35px;
-}
-
-.horizontal-menu li:hover .dropdown {
-	display: block;
-}
-
-li:hover {
-	background: gray;
-}
-
-li:hover > a {
+a {
+	text-decoration: none;
 	color: white;
-}
-
-/*
-ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-}
-
-a {
-	text-decoration: none;
-	color: darkblue;
 	font-size: 120%;
+}
+
+nav {
+	background: black;
+	box-shadow: 1px 2px 3px white;
 }
 
 nav li {
@@ -102,33 +58,46 @@ nav li {
 	padding: 10px;
 	text-align: center;
 	cursor: pointer;
-	position: relative;
-	display: inline-block;
 }
 
-ul {
+.horizontal-menu {
 	width: 315px;
 	margin: auto;
 }
 
-ul li .dropdown {
-	position: absolute;
-	top: 38px;
-	left: 0;
-	color: white;
-	background: gray;
-	display: none;
-	box-shadow: 1px 1px 3px black;
+.horizontal-menu li {
+	position: relative;
+	display: inline-block;
 }
 
-ul li:hover .dropdown {
+.horizontal-menu li .dropdown {
+	position: absolute;
+	top: 38px;
+	left: 0 ;
+	color: gray;
+	background: black;
+	display: none;
+}
+
+.horizontal-menu li:hover .dropdown {
 	display: block;
 }
 
-li:hover {
-	background: gray;
+button {
+	font-size: 150%;
+	text-transform: uppercase;
+	outline: none;
+	border: 2px solid green;
+	background: lightgreen;
+	color: black;
+	height: 50px;
+	width: 100%;
+	transition-duration: 1s;
 }
 
-li:hover > a {
-	color: white;
-}*/
+button:active {
+	border: 2px solid red;
+	background: white;
+	color: black;
+	transform: rotateX(360deg);
+}
