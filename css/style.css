@@ -20,6 +20,7 @@ header {
 	color: white;
 	font-size: 30px;
 	margin-bottom: 30px;
+	box-shadow: 2px 2px 3px blue;
 }
 
 header h1 {
@@ -28,159 +29,39 @@ header h1 {
 }
 
 nav {
-	width: 100%;
-	height: 100px;
-	background: darkblue;
-	text-align: center;
-	margin: 0 auto;
+	width: 10%;
+	height: 180px;
+	margin: 30px;
+	float: left;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
-
-.menu {
-	width: 650px;
-	height: 70px;
-	margin: 0 auto;
-	padding-top: 10px;
-}
-
-.menu li {
-	display: inline-block;
-	position: relative;
-	border: 1px solid white;
-	padding: 20px;
-	background: black;
-	width: 110px;
-}
-
-.dropdown {
-	position: absolute;
-	top: 59px;
-	left: 0px;
-	margin: 0;
-	padding: 0;
-	display: none;
-}
-
-.dropdown li {
-	width: 100%;
-	background: black;
-}
-
-nav li:hover .dropdown {
-	display: block;
-}
-
-a {
-	text-decoration: none;
-	color: white;
-}
-
-main {
-	margin: 0 auto;
-	width: 90%;
+.box {
+	border: 1px solid black;
+	box-shadow: 1px 1px 3px blue;
 	background: white;
+}
+
+.left-menu {
+	padding: 10px;
+	margin: 10px;
+}
+
+.content {
 	padding: 20px;
-	text-align: center;
+	float: right;
+	margin: 10px;
+	width: 1100px;
+	height: 400px;
 }
 
-table {
-	width: 100%;
-	border-collapse: collapse;
-	margin-bottom: 25px;
-}
+@media (max-width: 468px) {
+	nav {
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
 
-table th, td {
-	border: 1px solid red;
-	padding: 5px;
-}
-
-th {
-	background: gray;
-}
-
-td {
-	background: yellow;
-}
-
-th, td {
-	padding: 10px;
-}
-
-table tbody > tr:not(:nth-child(1)) {
-	background: red;
-}
-
-main h1 {
-	text-align: left;
-	margin: 0;
-	margin-bottom: 30px;
-}
-
-form input {
-	display: block;
-	margin-top: 20px;
-	width: 50%;
-	height: 40px;
-	border: 1px solid red;
-}
-
-form textarea {
-	margin-top: 20px;
-	display: block;
-	width: 80%;
-	height: 100px;
-	border: 1px solid blue;
-}
-
-input:focus {
-	border: 2px dotted green;
-	outline: none;
-}
-
-textarea:focus {
-	border: 2px dotted yellow;
-	outline: none;
-}
-
-.quote {
-	padding: 10px;
-	background: gray;
-	margin: auto;
-	border-radius: 10px;
-	position: relative;
-	z-index: 2;
-}
-
-.quote:before {
-	z-index: 1;
-	content: ' ';
-	width: 40px;
-	height: 40px;
-	top: -20px;
-	left: 40px;
-	transform: rotate(45deg);
-	background: gray;
-	position: absolute;
-}
-
-.exercise ul {
-	list-style: none;
-}
-
-li:first-child:before {
-	content: 'important'
-	color: red;
-	text-transform: uppercase;
-	background: yellow;
-}
-
-li:first-child:after {
-	content: 'done';
-	background: green;
-	color: pink;
+	.content {
+		margin-left: 0;
+	}
 }
