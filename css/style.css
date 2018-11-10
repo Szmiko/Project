@@ -88,6 +88,33 @@ main {
 	text-align: center;
 }
 
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 25px;
+}
+
+table th, td {
+	border: 1px solid red;
+	padding: 5px;
+}
+
+th {
+	background: gray;
+}
+
+td {
+	background: yellow;
+}
+
+th, td {
+	padding: 10px;
+}
+
+table tbody > tr:not(:nth-child(1)) {
+	background: red;
+}
+
 main h1 {
 	text-align: left;
 	margin: 0;
@@ -118,4 +145,42 @@ input:focus {
 textarea:focus {
 	border: 2px dotted yellow;
 	outline: none;
+}
+
+.quote {
+	padding: 10px;
+	background: gray;
+	margin: auto;
+	border-radius: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.quote:before {
+	z-index: 1;
+	content: ' ';
+	width: 40px;
+	height: 40px;
+	top: -20px;
+	left: 40px;
+	transform: rotate(45deg);
+	background: gray;
+	position: absolute;
+}
+
+.exercise ul {
+	list-style: none;
+}
+
+li:first-child:before {
+	content: 'important'
+	color: red;
+	text-transform: uppercase;
+	background: yellow;
+}
+
+li:first-child:after {
+	content: 'done';
+	background: green;
+	color: pink;
 }
