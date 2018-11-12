@@ -2,63 +2,78 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Responsive GRID</title>
+		<title>RWD</title>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<meta name="viewport" content="width = device-width, initial-scale = 1.0">
 	</head>
 	<body>
 		<nav>
-			<div class="row navigation">
-				<img src="https://images.pexels.com/photos/1089637/pexels-photo-1089637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="col-3">
-				<div class="menu col-6">
-					<ul class="horizontal">
-						<li><a href="#">About</a>
-							<ul class="dropdown">
-								<li><a href="#">History</a></li>
-								<li><a href="#">Past</a></li>
-								<li><a href="#">Future</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Offert</a>
-							<ul class="dropdown">		
-								<li><a href="#">Things</a></li>
-								<li><a href="#">Nothing</a></li>
-								<li><a href="#">Something</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Contact</a>
-							<ul class="dropdown">
-								<li><a href="#">E-mail</a></li>
-								<li><a href="#">Phone</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div>
-				<div class="number col-3">
-					<h2>tel: 123-456-789</h2>
-				</div>
-			</div>
+			<input type="checkbox" id="menu-button"></input>
+			<label for="menu-button">☰</label>
+			<ul class="container">
+				<li><a href="#about">About Us</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#">Other Link</a></li>
+			</ul>
 		</nav>
-		<header class="row">
-			<div class="back col-12">
-				<h1>Samwise Gamgee</h1>
+		<div class="hero">
+			<div class="hero-content">
+				<h2>This is your test!</h2>
+				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh.</p>
+				<button>Click me!</button>
 			</div>
-		</header>
-		<main class="row">
-			<div class="about col-8">
-				<h2>About</h2>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Etiam hendrerit augue hendrerit, varius lacus et, convallis libero. Pellentesque vitae scelerisque libero. Maecenas hendrerit orci vitae mollis ultrices. Cras id tempor nulla, quis ultrices augue. Nulla sed lorem magna.</p>
+		</div>
+		<div class="content-container">
+			<h2 id="about">About Us</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh.</p>
+			<h2 id="services">Check our services!</h2>
+			<div class="item-row">
+				<div class="item>">
+					<i class="fa fa-cloud fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item>">
+					<i class="fa fa-coffee fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item>">
+					<i class="fa fa-bus fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item>">
+					<i class="fa fa-picture-o fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
 			</div>
-			<div class="details col-4">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Etiam hendrerit augue hendrerit, varius lacus et, convallis libero.</p>
+			<div class="item-row">
+				<div class="item>">
+					<i class="fa fa-circle-o fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item>">
+					<i class="fa fa-calendar fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item>">
+					<i class="fa fa-taxi fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+				<div class="item>">
+					<i class="fa fa-bicycle fa-3x"></i>
+					<h3>Item</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
 			</div>
-		</main>
-		<footer class="row">
-			<div class="col-12">
-				<h3>The End</h3>
-			</div>
+		</div>
+		<footer>
+			<small>Best service 2018 &copy;</small>
 		</footer>
 	</body>
 </html>
-
-
