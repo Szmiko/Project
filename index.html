@@ -2,23 +2,63 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>:focus</title>
+		<title>Responsive GRID</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<meta name="viewport" content="width = device-width, initial-scale = 1.0">
 	</head>
 	<body>
-		<header>
-			<h1>:focus</h1>
-		</header>
-		<nav class="box menu">
-			<div class="left-menu">Menu Item</div>
-			<div class="left-menu">Menu Item</div>
-			<div class="left-menu">Menu Item</div>
+		<nav>
+			<div class="row navigation">
+				<img src="https://images.pexels.com/photos/1089637/pexels-photo-1089637.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="col-3">
+				<div class="menu col-6">
+					<ul class="horizontal">
+						<li><a href="#">About</a>
+							<ul class="dropdown">
+								<li><a href="#">History</a></li>
+								<li><a href="#">Past</a></li>
+								<li><a href="#">Future</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Offert</a>
+							<ul class="dropdown">		
+								<li><a href="#">Things</a></li>
+								<li><a href="#">Nothing</a></li>
+								<li><a href="#">Something</a></li>
+							</ul>
+						</li>
+						<li><a href="#">Contact</a>
+							<ul class="dropdown">
+								<li><a href="#">E-mail</a></li>
+								<li><a href="#">Phone</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<div class="number col-3">
+					<h2>tel: 123-456-789</h2>
+				</div>
+			</div>
 		</nav>
-		<section class="box content">
-			<h2>What is Responsive Web Design?</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Etiam hendrerit augue hendrerit, varius lacus et, convallis libero. Pellentesque vitae scelerisque libero. Maecenas hendrerit orci vitae mollis ultrices. Cras id tempor nulla, quis ultrices augue. Nulla sed lorem magna.</p>
-			<h2>Designing For The Best Experience For All Users</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Etiam hendrerit augue hendrerit, varius lacus et, convallis libero. Pellentesque vitae scelerisque libero. Maecenas hendrerit orci vitae mollis ultrices. Cras id tempor nulla, quis ultrices augue. Nulla sed lorem magna.</p>
-		</section>
+		<header class="row">
+			<div class="back col-12">
+				<h1>Samwise Gamgee</h1>
+			</div>
+		</header>
+		<main class="row">
+			<div class="about col-8">
+				<h2>About</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Etiam hendrerit augue hendrerit, varius lacus et, convallis libero. Pellentesque vitae scelerisque libero. Maecenas hendrerit orci vitae mollis ultrices. Cras id tempor nulla, quis ultrices augue. Nulla sed lorem magna.</p>
+			</div>
+			<div class="details col-4">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Etiam hendrerit augue hendrerit, varius lacus et, convallis libero.</p>
+			</div>
+		</main>
+		<footer class="row">
+			<div class="col-12">
+				<h3>The End</h3>
+			</div>
+		</footer>
 	</body>
 </html>
+
+
