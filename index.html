@@ -2,78 +2,54 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>RWD</title>
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<title>Form</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
 	<body>
-		<nav>
-			<input type="checkbox" id="menu-button"></input>
-			<label for="menu-button">☰</label>
-			<ul class="container">
-				<li><a href="#about">About Us</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#">Other Link</a></li>
-			</ul>
-		</nav>
-		<div class="hero">
-			<div class="hero-content">
-				<h2>This is your test!</h2>
-				<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh.</p>
-				<button>Click me!</button>
-			</div>
-		</div>
-		<div class="content-container">
-			<h2 id="about">About Us</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer in placerat lacus, hendrerit consectetur nibh.</p>
-			<h2 id="services">Check our services!</h2>
-			<div class="item-row">
-				<div class="item>">
-					<i class="fa fa-cloud fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="item>">
-					<i class="fa fa-coffee fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="item>">
-					<i class="fa fa-bus fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="item>">
-					<i class="fa fa-picture-o fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-			<div class="item-row">
-				<div class="item>">
-					<i class="fa fa-circle-o fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="item>">
-					<i class="fa fa-calendar fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="item>">
-					<i class="fa fa-taxi fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-				<div class="item>">
-					<i class="fa fa-bicycle fa-3x"></i>
-					<h3>Item</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<small>Best service 2018 &copy;</small>
-		</footer>
+		<header>
+			<h1>HTML Input Tag</h1>
+		</header>
+		<main>
+			<section>
+				<h1>&lt;input&gt; element - types</h1>
+				<form>
+					<h1>Create an account</h1>
+					<p>Your nickname</p>
+					<input type="text">
+					<p>Your email</p>
+					<input type="email">
+					<p>Your password</p>
+					<input type="password">
+					<button type="submit"><i class="fa fa-check"></i>Send</button>
+					<button type="reset"><i class="fa fa-times"></i>Reset</button>
+					<p>Your age</p>
+					<input type="range">
+					<input type="date">
+					<fieldset>
+						<div>
+							<input type="radio" name="gender" value="female">
+							<span>Female</span>
+						</div>
+						<div>
+							<input type="radio" name="gender" value="male">
+							<span>Male</span>
+						</div>
+						<h3>Others inputs</h3>
+						<div>
+							<input type="checkbox" name="pets_preference" value="dogs">
+							<span>Dogs</span>
+						</div>
+						<div>
+							<input type="checkbox" name="pets_preference" value="cats">
+							<span>Cats</span>
+						</div>
+					</fieldset>
+				</form>
+			</section>
+			<section>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tristique ornare. Duis nulla erat, varius id quam suscipit, scelerisque ornare felis. Etiam ac ultrices turpis.</p>
+			</section>
+		</main>
 	</body>
 </html>

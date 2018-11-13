@@ -1,153 +1,47 @@
 * {
 	box-sizing: border-box;
-	outline: none;
 }
 
 body {
-	background: gray;
-	padding: 0;
 	margin: 0;
-}
-
-h2, h3 {
-	text-align: center;
-}
-
-.container {
-	width: 500px;
-	margin: 0 auto;
-}
-
-/*NAV*/
-
-nav {
-	font-size: 20px;
-	background: pink;
-}
-
-ul {
 	padding: 0;
+	background: lightyellow;
+}
+
+header {
+	background: url('https://images.pexels.com/photos/1539225/pexels-photo-1539225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
+	height: 350px;
+	text-align: center;
+	padding-top: 110px;
+	margin-bottom: 80px;
+	overflow: auto;
+}
+
+header h1 {
 	margin: 0;
-}
-
-ul > li {
-	position: relative;
-	box-sizing: border-box;
-	text-align: center;
-	display: inline-block;
-	list-style: none;
-}
-
-ul > li > a:hover {
-	color: red;
-}
-
-ul > li > a {
-	padding: 10px 20px;
-	display: inline-block;
-	text-decoration: none;
-	color: black;
-}
-
-.hero {
-	background: url('https://images.pexels.com/photos/1578751/pexels-photo-1578751.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
-	margin: auto;
-	background-color: blue;
-	text-align: center;
-	display: flex;
-	height: 400px;
-}
-
-.hero-content {
-	margin: auto;
-	width: 400px;
-	text-shadow: 1px 1px 1px black;
-	background-color: rgba(0, 0, 0, 0.5);
+	padding: 0;
 	color: white;
+}
+
+main {
 	padding: 20px;
-	box-shadow: 2px 2px 2px blue;
-}
-
-button {
-	border: none;
-	background-color: lightblue;
-	width: 300px;
-	margin: auto;
-	height: 50px;
-	text-transform: uppercase;
-	color: green;
-	cursor: pointer;
-}
-
-button:hover {
-	background-color: white;
-}
-
-/*Content*/
-
-.content {
-	box-shadow: 0px 1px 1px yellow;
-	padding: 20px;
-	margin: 20px auto;
-	background: white;
-}
-
-.item-row {
-	font-size: 10px;
-}
-
-.item {
-	font-size: 16px;
-	display: inline-block;
-	width: 25%;
-	padding: 10px;
+	max-width: 700px;
+	display: flex;
+	flex-flow: column;
+	align-items: center;
 	text-align: center;
+	margin: 0 auto;
+	width: 80%;
+	background: gray;
+	box-shadow: 2px 2px 3px black;
 }
 
-.item:hover {
-	cursor: pointer;
-	background-color: brown;
-	color: pink;
+form {
+	display: flex;
+	flex-flow: column;
 }
 
-footer {
-	padding: 10px;
-	color: blue;
+form > * {
+	padding: 5px;
 	text-align: center;
-}
-
-input[type="checkbox"] + label {
-	font-size: 25px;
-	cursor: pointer;
-}
-
-input, label {
-	display: none;
-}
-
-@media (max-width: 800px) {
-	.item {
-		width: 50%;
-	}
-}
-
-@media (max-width: 550px) {
-	nav {
-		text-align: center;
-	}
-	label {
-		display: block;
-	}
-	#menu-button:not(:checked) ~ul {
-		display: none;
-	}
-	#menu-buton:checked ~ul {
-		display: block;
-	}
-	.container, li, hero, item, a {
-		width: 100%;
-	}
-	.container {
-		margin-top: 0;
-	}
 }
