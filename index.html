@@ -10,7 +10,7 @@
 			<h1>HTML Input Form</h1>
 		</header>
 		<main>
-			<h1>&lt;fieldset&gt; element</h1>
+			<h1>&lt;select&gt; tag</h1>
 
 			<form>
 				<input type="number" placeholder="Quantity">
@@ -22,6 +22,38 @@
 					<input type="radio" name="delivery_agency" value="USPS">USPS
 					<input type="radio" name="delivery_agency" value="FedEx">FedEx
 				</fieldset>
+				<select>
+					<optgroup label="first">
+						<option value="one">Opcja 1</option>
+						<option value="two">Opcja 2</option>
+					</optgroup>
+					<optgroup label="second">
+						<option value="three">Opcja 3</option>
+						<option value="four">Opcja 4</option>
+					</optgroup>
+				</select>
+				<textarea rows="20" cols="30" placeholder="Write your message here..."></textarea>
+				<h3>How are you today?</h3>
+				<fieldset>
+					<span>
+						<input type="radio" id="fun" name="how" value="fine">
+						<label for="fun">I'm fine.</label>
+					</span>
+					<span>
+						<input type="radio" id="not_fun" name="how" value="miserable">
+						<label for="not_fun">Not well.</label>
+				</fieldset>
+				<h2>Car brands survay</h2>
+				<h3>What's your favourite car brand?</h3>
+				<input type="text" list="car_brands">
+				<input type="submit">
+				<datalist id="car_brands">
+					<option value="opel">Opel</option>
+					<option value="fiat">Fiat</option>
+					<option value="toyota">Toyota</option>
+					<option value="mitsubishi">Mitsubishi</option>
+				</datalist>
+
 			</form>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tristique ornare. Duis nulla erat, varius id quam suscipit, scelerisque ornare felis. Etiam ac ultrices turpis. Vivamus non blandit nibh. In at finibus erat. Sed et orci dictum, luctus turpis vel, tincidunt felis. Phasellus a porttitor sem.</p>
 		</main>
