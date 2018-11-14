@@ -10,49 +10,25 @@
 			<h1>HTML Input Form</h1>
 		</header>
 		<main>
-			<h1>&lt;select&gt; tag</h1>
-
+			<h1>Pet preferences survay</h1>
 			<form>
-				<input type="number" placeholder="Quantity">
-				<input type="text" placeholder="Delivery address">
-				<input type="text" placeholder="Recipient's name">
+				<h3>What's your name?</h3>
+				<input type="text" name="name" required>
+				<h3>Are you male or female?</h3>
+				<input type="radio" id="Male" name="gender" value="male">
+				<label for="Male">Male
+				<input type="radio" id="Female" name="gender" value="female">
+				<label for="Female">Female
+				<h3>What's your favourite pet animal?</h3>
 				<fieldset>
-					<legend>Choose your shipping options.</legend>
-					<input type="radio" name="delivery_agency" value="UPS">UPS
-					<input type="radio" name="delivery_agency" value="USPS">USPS
-					<input type="radio" name="delivery_agency" value="FedEx">FedEx
+					<input type="radio" name="anmial" value="dog" hidden>A dog
+					<input type="radio" name="anmial" value="cat" disabled>A cat
+					<input type="radio" name="anmial" value="tortoise">A tortoise
+					<input type="radio" name="anmial" value="rabbit">A rabbit
+					<input type="radio" name="anmial" value="snake">A snake
 				</fieldset>
-				<select>
-					<optgroup label="first">
-						<option value="one">Opcja 1</option>
-						<option value="two">Opcja 2</option>
-					</optgroup>
-					<optgroup label="second">
-						<option value="three">Opcja 3</option>
-						<option value="four">Opcja 4</option>
-					</optgroup>
-				</select>
-				<textarea rows="20" cols="30" placeholder="Write your message here..."></textarea>
-				<h3>How are you today?</h3>
-				<fieldset>
-					<span>
-						<input type="radio" id="fun" name="how" value="fine">
-						<label for="fun">I'm fine.</label>
-					</span>
-					<span>
-						<input type="radio" id="not_fun" name="how" value="miserable">
-						<label for="not_fun">Not well.</label>
-				</fieldset>
-				<h2>Car brands survay</h2>
-				<h3>What's your favourite car brand?</h3>
-				<input type="text" list="car_brands">
-				<input type="submit">
-				<datalist id="car_brands">
-					<option value="opel">Opel</option>
-					<option value="fiat">Fiat</option>
-					<option value="toyota">Toyota</option>
-					<option value="mitsubishi">Mitsubishi</option>
-				</datalist>
+				<input type="submit" value="Hello">
+				<input type="range" min="2" max="20" step="2">
 
 			</form>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tristique ornare. Duis nulla erat, varius id quam suscipit, scelerisque ornare felis. Etiam ac ultrices turpis. Vivamus non blandit nibh. In at finibus erat. Sed et orci dictum, luctus turpis vel, tincidunt felis. Phasellus a porttitor sem.</p>
