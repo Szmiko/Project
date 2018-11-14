@@ -2,54 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Form</title>
+		<title>Form - continuation</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
 	</head>
 	<body>
 		<header>
-			<h1>HTML Input Tag</h1>
+			<h1>HTML Input Form</h1>
 		</header>
 		<main>
-			<section>
-				<h1>&lt;input&gt; element - types</h1>
-				<form>
-					<h1>Create an account</h1>
-					<p>Your nickname</p>
-					<input type="text">
-					<p>Your email</p>
-					<input type="email">
-					<p>Your password</p>
-					<input type="password">
-					<button type="submit"><i class="fa fa-check"></i>Send</button>
-					<button type="reset"><i class="fa fa-times"></i>Reset</button>
-					<p>Your age</p>
-					<input type="range">
-					<input type="date">
-					<fieldset>
-						<div>
-							<input type="radio" name="gender" value="female">
-							<span>Female</span>
-						</div>
-						<div>
-							<input type="radio" name="gender" value="male">
-							<span>Male</span>
-						</div>
-						<h3>Others inputs</h3>
-						<div>
-							<input type="checkbox" name="pets_preference" value="dogs">
-							<span>Dogs</span>
-						</div>
-						<div>
-							<input type="checkbox" name="pets_preference" value="cats">
-							<span>Cats</span>
-						</div>
-					</fieldset>
-				</form>
-			</section>
-			<section>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tristique ornare. Duis nulla erat, varius id quam suscipit, scelerisque ornare felis. Etiam ac ultrices turpis.</p>
-			</section>
+			<h1>&lt;fieldset&gt; element</h1>
+
+			<form>
+				<input type="number" placeholder="Quantity">
+				<input type="text" placeholder="Delivery address">
+				<input type="text" placeholder="Recipient's name">
+				<fieldset>
+					<legend>Choose your shipping options.</legend>
+					<input type="radio" name="delivery_agency" value="UPS">UPS
+					<input type="radio" name="delivery_agency" value="USPS">USPS
+					<input type="radio" name="delivery_agency" value="FedEx">FedEx
+				</fieldset>
+			</form>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tristique ornare. Duis nulla erat, varius id quam suscipit, scelerisque ornare felis. Etiam ac ultrices turpis. Vivamus non blandit nibh. In at finibus erat. Sed et orci dictum, luctus turpis vel, tincidunt felis. Phasellus a porttitor sem.</p>
 		</main>
 	</body>
 </html>

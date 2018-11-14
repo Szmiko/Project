@@ -3,45 +3,40 @@
 }
 
 body {
+	margin: 0 auto;
+	background: lightyellow;
+	padding: 0;
+	text-align: center;
+}
+
+body h1 {
 	margin: 0;
 	padding: 0;
-	background: lightyellow;
 }
 
 header {
-	background: url('https://images.pexels.com/photos/1539225/pexels-photo-1539225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
+	background: url('https://images.pexels.com/photos/910154/pexels-photo-910154.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
 	height: 350px;
 	text-align: center;
-	padding-top: 110px;
-	margin-bottom: 80px;
-	overflow: auto;
-}
-
-header h1 {
-	margin: 0;
-	padding: 0;
-	color: white;
+	padding-top: 80px;
+	color: blue;
+	font-size: 50px;
 }
 
 main {
-	padding: 20px;
-	max-width: 700px;
-	display: flex;
-	flex-flow: column;
-	align-items: center;
-	text-align: center;
+	padding: 25px;
 	margin: 0 auto;
+	margin-top: 50px;
 	width: 80%;
-	background: gray;
-	box-shadow: 2px 2px 3px black;
+	background: lightblue;
+	box-shadow: 2px 2px 3px blue;
+	height: auto;
 }
 
-form {
-	display: flex;
-	flex-flow: column;
+main h1 {
+	margin: 25px 0;
 }
 
-form > * {
-	padding: 5px;
-	text-align: center;
+fieldset, fieldset > * {
+	padding: 7px;
 }
