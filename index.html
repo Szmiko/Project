@@ -2,36 +2,21 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Form - continuation</title>
+		<title>Input style</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<header>
-			<h1>HTML Input Form</h1>
-		</header>
 		<main>
-			<h1>Pet preferences survay</h1>
 			<form>
-				<h3>What's your name?</h3>
-				<input type="text" name="name" required>
-				<h3>Are you male or female?</h3>
-				<input type="radio" id="Male" name="gender" value="male">
-				<label for="Male">Male
-				<input type="radio" id="Female" name="gender" value="female">
-				<label for="Female">Female
-				<h3>What's your favourite pet animal?</h3>
-				<fieldset>
-					<input type="radio" name="anmial" value="dog" hidden>A dog
-					<input type="radio" name="anmial" value="cat" disabled>A cat
-					<input type="radio" name="anmial" value="tortoise">A tortoise
-					<input type="radio" name="anmial" value="rabbit">A rabbit
-					<input type="radio" name="anmial" value="snake">A snake
-				</fieldset>
-				<input type="submit" value="Hello">
-				<input type="range" min="2" max="20" step="2">
-
+				<h1>Sign up today</h1>
+				<div>
+					<input class="name" type="text" placeholder="First name">
+					<input class="lastname" type="text" placeholder="Last name">
+				</div>
+				<input class="email" type="email" placeholder="Email address*" required>
+				<input class="password" type="password" placeholder="Your password" required>
+				<button type="submit">Let's do it!</button>
 			</form>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ultricies tristique ornare. Duis nulla erat, varius id quam suscipit, scelerisque ornare felis. Etiam ac ultrices turpis. Vivamus non blandit nibh. In at finibus erat. Sed et orci dictum, luctus turpis vel, tincidunt felis. Phasellus a porttitor sem.</p>
 		</main>
 	</body>
 </html>
