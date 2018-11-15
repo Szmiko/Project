@@ -2,21 +2,35 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Input style</title>
+		<title>Checkbox</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 	<body>
-		<main>
-			<form>
-				<h1>Sign up today</h1>
-				<div>
-					<input class="name" type="text" placeholder="First name">
-					<input class="lastname" type="text" placeholder="Last name">
+		<form>
+			<h1>Sign Up for Free</h1>
+			<div class="top-row">
+				<div class="field-wrap">
+					<input type="text" placeholder="First name *" name="firstname" required>
 				</div>
-				<input class="email" type="email" placeholder="Email address*" required>
-				<input class="password" type="password" placeholder="Your password" required>
-				<button type="submit">Let's do it!</button>
-			</form>
-		</main>
+				<div class="field-wrap">
+					<input type="email" placeholder="Email *" name="email" required>
+				</div>
+			</div>
+			<div class="field-wrap">
+				<input type="checkbox" name="newsletter" id="newsletter" value="true" hidden>
+				<label for="newsletter">
+					<span></span>
+					<p>I want to receive the newsletter.</p>
+				</label>
+			</div>
+			<div class="field-wrap">
+				<input type="checkbox" name="tos" id="tos" value="true" hidden>
+				<label for="tos">
+					<span></span>
+					<p>I accept the Terms of Service</p>
+				</label>
+			</div>
+			<button class="button button-block" type="submit">Get Started</button>
+		</form>
 	</body>
 </html>
