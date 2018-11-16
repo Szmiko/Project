@@ -3,76 +3,102 @@
 }
 
 body {
-	display: flex;
-	height: 100vh;
-	min-width: 300px;
-	flex-flow: row;
-	align-items: center;
-	justify-content: center;
-	background: lightblue;
+	background: lightgray;
+	padding: 10px 0;
+	margin: 0;
+	font-size: 14px;
+	overflow-x: hidden;
+	min-width: 345px;
 }
 
-main {
-	background: white;
-	width: 50%;
-	max-width: 568px;
-	height: 60%;
-	min-width: 320px;
-	box-shadow: 2px 2px 3px blue;
+*:after {
+	contet: "";
+	display: table;
+	clear: both;
 }
 
-.label_container {
-	display: inline-block;
-	width: 100%;
-	height: 15%;
-	padding: 0 5% 0 5%;
-	background: lightgreen;
-	box-shadow: 2px 2px 3px green;
+h1 {
+	text-align: center;
+}
+
+
+form {
+	max-width: 768px;
+	display: block;
+	width: 95%;
+	background: lightyellow;
+	padding: 25px 0;
+	margin: 40px auto;
+	color: black;
+	box-shadow: 2px 2px 2px blue;
+}
+
+fieldset {
+	border: none;
+	width: 90%;
+	margin: 10px auto;
+}
+
+legend {
+	margin: 30px 0 0;
+	font-size: 24px;
+	font-weight: 700px;
+}
+
+.double-input {
+	margin: 20px auto;
+}
+
+.double-input div {
+	float: left;
+	width: 48%;
+	margin: 0 1% 10px;
 }
 
 label {
-	display: inline-block;
-	width: 32%;
-	cursor: pointer;
-	font-size: 1.3em;
-	text-align: center;
-	line-height: 350%;
-	transition: .5s color;
-}
-
-label:hover {
-	color: red;
-}
-
-#first_tab:checked ~ main label[for="first_tab"],
-#second_tab:checked ~ main label[for="second_tab"],
-#third_tab:checked ~ main label[for="third_tab"] {
-	border-top: 5px solid black;
-}
-
-section {
-	display: none;
-	padding: 20% 10% 0 10%;
-	text-align: center;
-}
-
-#first_tab:checked ~ main > #first_choice,
-#second_tab:checked ~ main > #second_choice,
-#third_tab:checked ~ main > #third_choice {
 	display: block;
+	margin-bottom: 10px;
 }
 
-.social_icons {
-	display: flex;
-	flex-flow: row;
-	justify-content: space-around;
-	padding-top: 10%;
-}
-
-.social_icons i {
-	transition: .5s all;
-}
-
-.social_icons i:hover {
+button[type="submit"] {
+	height: 50px;
+	width: 300px;
+	background: pink;
 	color: blue;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	line-height: 50px;
+	display: block;
+	margin: 0 auto;
+}
+
+input, select {
+	width: 100%;
+	color: white;
+	background: transparent;
+	border: 1px solid red;
+	padding: 8px;
+	height: 35px;
+}
+
+.date-select > select {
+	width: 47%;
+}
+
+.date-select > select:first-of-type {
+	margin-right: 3%;
+}
+
+input, select:focus {
+	border: 1px solid green;
+}
+
+input, select:valid {
+	border: 1px solid yellow;
+}
+
+option {
+	color: black;
+	background: brown;
 }

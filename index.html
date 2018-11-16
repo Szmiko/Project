@@ -4,37 +4,87 @@
 		<meta charset="UTF-8">
 		<title>Magic buttons</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	</head>
 	<body>
-		<input type="radio" id="first_tab" name="tab_choice" checked hidden>
-		<input type="radio" id="second_tab" name="tab_choice" hidden>
-		<input type="radio" id="third_tab" name="tab_choice" hidden>
-		<main>
-			<div class="label_container">
-				<label for="first_tab">Home</label>
-				<label for="second_tab">About</label>
-				<label for="third_tab">Contact</label>
-			</div>
-			<section id="first_choice">
-				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula.</div>
-				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</div>
-			</section>
-			<section id="second_choice">
-				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula.</div>
-				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</div>
-			</section>
-			<section id="third_choice">
-				<h1>Shoot us a message via</h1>
-				<div class="social_icons">
-					<i class="fa fa-2x fa-facebook"></i>
-					<i class="fa fa-2x fa-google-plus"></i>
-					<i class="fa fa-2x fa-github"></i>
+		<form>
+			<fieldset>
+				<legend>Personal data</legend>
+				<div class="double-input">
+					<div class="form-input-container">
+						<label for="fname">First name</label>
+						<input type="text" id="fname" placeholder="Name" minlength="3" required>
+					</div>
+					<div class="form-input-container">
+						<label for="lname">Last name</label>
+						<input type="text" id="fname" placeholder="Last name" minlength="3" required>
+					</div>
 				</div>
-			</section>
-		</main>
-	</body>
-</html>
+				<div class="double-input">
+					<div class="form-input-container">
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="Email" required>
+					</div>
+					<div class="form-input-container">
+						<label for="phone">Phone</label>
+						<input type="tel" id="phone" placeholder="Phone number" required>
 
+					</div>
+				</div>
+			</fieldset>
+			<fieldset>
+				<legend>Room details</legend>
+				<div class="double-input">
+					<div class="form-input-container">
+						<label for="hotelcity">City</label>
+						<select id="hotelcity" value="city">
+							<option>Wrocław</option>
+							<option>Warszawa</option>
+							<option>Kraków</option>
+							<option>Poznań</option>
+						</select>
+					</div>
+					<div class="form-input-container">
+						<label for="capacity" value="capacity">Capacity</label>
+						<input type="number" id="capacity" value="1"
+						min="1" max="10">
+					</div>
+				</div>
+				<div class="double-input">
+					<div class="form-input-container date-select">
+						<label for="start-date-day">Start day</label>
+						<select id="start-date-day">
+							<option disabled selected>Day</option>
+							<option>Monday</option>
+							<option>Thusday</option>
+							<option>Wednesday</option>
+						</select>
+						<label for="start-date-month"></label>
+						<select id="start-date-month">
+							<option disabled selected>Month</option>
+							<option>July</option>
+							<option>September</option>
+							<option>December</option>
+						</select>
+					</div>
+					<div class="form-input-container date-select">
+						<label for="end-date-day">End date</label>
+						<select id="end-date-day">
+							<option disabled selected>Day</option>
+							<option>Monday</option>
+							<option>Thusday</option>
+							<option>Wednesday</option>
+						</select>
+						<label for="end-date-month"></label>
+						<select id="end-date-month">
+							<option disabled selected>Month</option>
+							<option>July</option>
+							<option>September</option>
+							<option>December</option>
+						</select>
+					</div>
+				</div>
+			</fieldset>
+			<button type="submit">Submit a request</button>
+		</form>
 	</body>
 </html>
