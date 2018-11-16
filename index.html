@@ -2,53 +2,39 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>Checkbox</title>
+		<title>Magic buttons</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	</head>
 	<body>
-		<form>
-			<h1>Sign Up for Free</h1>
-			<div class="top-row">
-				<div class="field-wrap">
-					<input type="text" placeholder="First name *" name="firstname" required>
-				</div>
-				<div class="field-wrap">
-					<input type="email" placeholder="Email *" name="email" required>
-				</div>
+		<input type="radio" id="first_tab" name="tab_choice" checked hidden>
+		<input type="radio" id="second_tab" name="tab_choice" hidden>
+		<input type="radio" id="third_tab" name="tab_choice" hidden>
+		<main>
+			<div class="label_container">
+				<label for="first_tab">Home</label>
+				<label for="second_tab">About</label>
+				<label for="third_tab">Contact</label>
 			</div>
+			<section id="first_choice">
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula.</div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</div>
+			</section>
+			<section id="second_choice">
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula.</div>
+				<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</div>
+			</section>
+			<section id="third_choice">
+				<h1>Shoot us a message via</h1>
+				<div class="social_icons">
+					<i class="fa fa-2x fa-facebook"></i>
+					<i class="fa fa-2x fa-google-plus"></i>
+					<i class="fa fa-2x fa-github"></i>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
 
-			<div class="top-row">
-				<div class="field-wrap">
-					<input type="radio" name="sex" id="male" value="male" hidden>
-					<label class="radio" for="male">
-						<span></span>
-						<p>I'm male.</p>
-					</label>
-				</div>
-				<div class="field-wrap">
-					<input type="radio" name="sex" id="female" value="female" hidden>
-					<label class="radio" for="female">
-						<span></span>
-						<p>I'm female.</p>
-					</label>
-				</div>
-			</div>
-
-			<div class="field-wrap">
-				<input type="checkbox" name="newsletter" id="newsletter" value="true" hidden>
-				<label for="newsletter">
-					<span></span>
-					<p>I want to receive the newsletter.</p>
-				</label>
-			</div>
-			<div class="field-wrap">
-				<input type="checkbox" name="tos" id="tos" value="true" hidden>
-				<label for="tos">
-					<span></span>
-					<p>I accept the Terms of Service</p>
-				</label>
-			</div>
-			<button class="button button-block" type="submit">Get Started</button>
-		</form>
 	</body>
 </html>

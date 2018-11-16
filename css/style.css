@@ -1,144 +1,78 @@
-@import url('https://fonts.googleapis.com/css?family=Allerta+Stencil');
-@import url('https://fonts.googleapis.com/css?family=Oswald');
-
 * {
 	box-sizing: border-box;
 }
 
 body {
+	display: flex;
+	height: 100vh;
+	min-width: 300px;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
 	background: lightblue;
-	font-family: 'Allerta Stencil', sans-serif;
 }
 
-form {
-	background: blue;
-	padding: 25px;
-	max-width: 600px;
-	margin: 40px auto;
-	box-shadow: 2px 2px 4px black;
+main {
+	background: white;
+	width: 50%;
+	max-width: 568px;
+	height: 60%;
+	min-width: 320px;
+	box-shadow: 2px 2px 3px blue;
 }
 
-h1 {
-	text-align: center;
-	color: white;
-	font-weight: 300;
-	margin: 0 0 40px;
-}
-
-input:not([type="checkbox"]) {
-	font-size: 22px;
-	display: block;
+.label_container {
+	display: inline-block;
 	width: 100%;
-	padding: 5px 10px;
-	background: transparent;
-	border: 1px solid yellow;
-	color: red;
-	transition: border-color .25s ease;
-	-webkit-appearance: none;
-	appearance: none;
-}
-
-input:focus {
-	outline: 0;
-	border-color: green;
-}
-
-.field-wrap {
-	margin-bottom: 20px; 
-}
-
-.top-row:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-.top-row > div {
-	float: left;
-	width: 48%;
-	margin-right: 4%;
-	margin-bottom: 40px;
-}
-
-.top-row > div:last-child {
-	margin-right: 0;
-}
-
-.button {
-	border: 0;
-	outline: 0;
-	border-radius: 0;
-	padding: 15px 0;
-	font-size: 26px;
-	font-weight: 600;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	box-shadow: 2px 2px 2px green;
+	height: 15%;
+	padding: 0 5% 0 5%;
 	background: lightgreen;
-	color: black;
-	-webkit-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+	box-shadow: 2px 2px 3px green;
 }
 
 label {
-	font-size: 18px;
-	color: red;
-	height: auto;
+	display: inline-block;
+	width: 32%;
 	cursor: pointer;
-	user-select: none;
+	font-size: 1.3em;
+	text-align: center;
+	line-height: 350%;
+	transition: .5s color;
 }
 
-label p {
-	display: inline-block;
-	margin-top: 5px;
+label:hover {
+	color: red;
 }
 
-button:hover, button:focus {
-	background: gray;
+#first_tab:checked ~ main label[for="first_tab"],
+#second_tab:checked ~ main label[for="second_tab"],
+#third_tab:checked ~ main label[for="third_tab"] {
+	border-top: 5px solid black;
 }
 
-.button-block {
-	width: 100%;
+section {
+	display: none;
+	padding: 20% 10% 0 10%;
+	text-align: center;
 }
 
-label > span {
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	margin-bottom: -6px;
-	margin-right: 5px;
-	border: 1px solid black;
-	position: relative;
+#first_tab:checked ~ main > #first_choice,
+#second_tab:checked ~ main > #second_choice,
+#third_tab:checked ~ main > #third_choice {
+	display: block;
 }
 
-input[type="checkbox"]:checked ~ .checkbox > span:before {
-	font-family: 'Oswald', sans-serif;
-	content: '\f00c';
-	position: absolute;
-	color: yellow;
-	top: 50%;
-	left: 50%;
-	transform: translateY(-50%) translateX(-50%);
+.social_icons {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-around;
+	padding-top: 10%;
 }
 
-.radio span {
-	display: inline-block;
-	height: 25px;
-	width: 25px;
-	border-radius: 50%;
-	margin-bottom: -6px;
-	margin-right: 5px;
-	border: 1px solid black;
-	position: relative;
+.social_icons i {
+	transition: .5s all;
 }
 
-input[type="radio"]:checked ~ .radio > span:before {
-	content: "";
-	position: absolute;
-	height: 13px;
-	width: 13px;
-	border-radius: 50%;
-	background: green;
-	top: 5px;
-	left: 6px;
+.social_icons i:hover {
+	color: blue;
 }
