@@ -1,104 +1,30 @@
-* {
-	box-sizing: border-box;
+.jumbotron {
+	height: 400px;
+	background: url('https://images.pexels.com/photos/1036657/pexels-photo-1036657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
+	margin-bottom: 20px
 }
 
-body {
-	background: lightgray;
-	padding: 10px 0;
-	margin: 0;
-	font-size: 14px;
-	overflow-x: hidden;
-	min-width: 345px;
+a.btn {
+	margin-top: 10px;
 }
 
-*:after {
-	contet: "";
-	display: table;
-	clear: both;
+.caption a.btn {
+	margin-top: 0;
 }
 
-h1 {
-	text-align: center;
-}
-
-
-form {
-	max-width: 768px;
-	display: block;
-	width: 95%;
-	background: lightyellow;
-	padding: 25px 0;
-	margin: 40px auto;
-	color: black;
-	box-shadow: 2px 2px 2px blue;
-}
-
-fieldset {
-	border: none;
-	width: 90%;
-	margin: 10px auto;
-}
-
-legend {
-	margin: 30px 0 0;
-	font-size: 24px;
-	font-weight: 700px;
-}
-
-.double-input {
-	margin: 20px auto;
-}
-
-.double-input div {
-	float: left;
-	width: 48%;
-	margin: 0 1% 10px;
-}
-
-label {
-	display: block;
-	margin-bottom: 10px;
-}
-
-button[type="submit"] {
+.footer {
 	height: 50px;
-	width: 300px;
-	background: pink;
 	color: blue;
-	border: none;
-	cursor: pointer;
-	font-size: 20px;
-	line-height: 50px;
-	display: block;
-	margin: 0 auto;
+	text-align: center;
+	background: gray;
+	padding-top: 15px;
 }
 
-input, select {
-	width: 100%;
-	color: white;
-	background: transparent;
-	border: 1px solid red;
-	padding: 8px;
-	height: 35px;
+.footer a {
+	color: red;
 }
 
-.date-select > select {
-	width: 47%;
-}
-
-.date-select > select:first-of-type {
-	margin-right: 3%;
-}
-
-input, select:focus {
-	border: 1px solid green;
-}
-
-input, select:valid {
-	border: 1px solid yellow;
-}
-
-option {
-	color: black;
-	background: brown;
+.footer a:hover {
+	color: pink;
+	text-decoration: none;
 }
