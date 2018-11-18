@@ -1,5 +1,13 @@
 body {
 	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.jumbotron {
+	background: url('https://images.pexels.com/photos/1391421/pexels-photo-1391421.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
+	height: 400px;
+	margin-bottom: 20px;
 }
 
 h2 {
@@ -7,7 +15,12 @@ h2 {
 	text-align: center;
 }
 
+.col-xs-4 {
+	border: 2px solid black;
+}
+
 .footer {
+	margin-top: 30px;
 	font-size: 10px;
 	text-align: center;
 	padding: 20px;
