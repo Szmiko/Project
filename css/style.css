@@ -5,12 +5,15 @@ body {
 }
 
 .jumbotron {
-	background: url('https://images.pexels.com/photos/1417255/pexels-photo-1417255.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
 	height: 400px;
+	background: url('https://images.pexels.com/photos/1612559/pexels-photo-1612559.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
 }
 
-.jumbotron h1 {
-	font-size: 25px;
-	font-weight: bold;
-	color: white;
+.row {
+	margin-top: 40px;
+}
+
+.pagination {
+	display: flex;
+	justify-content: center;
 }

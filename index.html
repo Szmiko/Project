@@ -9,46 +9,69 @@
 	<body>
 		<div class="jumbotron">
 			<div class="container">
-				<h1>Bootstrap tables</h1>
+				<h1>Getting started Bootstrap</h1>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula.</p>
 			</div>
 		</div>
 		<div class="container">
-			<h2>Tables</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</p>
-			<h2>Responsive</h2>
-			<p> Nulla facilisis tristique lectus quis pharetra. Quisque tristique risus sit amet lectus rhoncus, id porta enim fermentum. Sed id dui fringilla, mattis ex in, semper augue.</p>
-			<div class="table-section">
-				<h2>Table</h2>
-				<div class="table-responsive">
-					<table class="table table-bordered table-striped table-hover">
-						<thead class="thead-dark">
-							<tr>
-								<th class="active">One</th>
-								<th>Two</th>
-								<th>Three</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr class="warning">
-								<td>One</td>
-								<td>One</td>
-								<td>One</td>
-							</tr>
-							<tr>
-								<td class="info">One</td>
-								<td>One</td>
-								<td>One</td>
-							</tr>
-							<tr>
-								<td>One</td>
-								<td>One</td>
-								<td class="success">One</td>
-							</tr>
-						</tbody>
-					</table>
+			<div class="row">
+				<div class="col-xs-6">
+					<h2>Basic example</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</p>
+				</div>
+				<div class="col-xs-6">
+					<h2>Don't mix groups</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fringilla ultrices vehicula. Donec vehicula quis urna hendrerit fringilla. Vestibulum sagittis augue sagittis ex ornare accumsan.</p>
 				</div>
 			</div>
+		</div>
+		<div class="form">
+			<form>
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control input-lg" id="email" placeholder="Email" readonly>
+				</div>
+				<div class="form-group has-success">
+					<label for="topic">Topic</label>
+					<input type="text" class="form-control input-sm" id="topic" placeholder="Topic" disabled>
+				</div>
+				<div class="form-group form-group-lg">
+					<label for="message">Message</label>
+					<textarea class="form-control" rows="5" placeholder="Message..."></textarea>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</form>
+		</div>
+		<div class="container">
+			<div class="pagination-container">
+				<nav>
+					<ul class="pagination">
+						<li>
+							<a href="#" aria-label="Previous">
+							<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="active"><a href="#">1</a></li>
+						<li class="disabled"><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li>
+							<a href="#" aria-label="Next">
+							<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div class="container">
+			<nav>
+				<ul class="pager">
+					<li><a href="#">Poprzednia</a></li>
+					<li><a href="#">Następna</a></li>
+				</ul>
+			</nav>
 		</div>
 	</body>
 </html>
