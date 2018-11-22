@@ -7,6 +7,10 @@ body {
 	padding: 0;
 }
 
+.nav-pills li a {
+	border-radius: 0;
+}
+
 .jumbotron {
 	height: 400px;
 	background: url('https://images.pexels.com/photos/1427513/pexels-photo-1427513.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260') 0/cover no-repeat;
