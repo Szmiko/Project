@@ -1,14 +1,14 @@
+.nav-pills li a {
+	border-radius: 0;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-}
-
-.nav-pills li a {
-	border-radius: 0;
 }
 
 .jumbotron {
@@ -18,4 +18,13 @@ body {
 
 .container h2 {
 	margin-top: 50px;
+}
+
+.content {
+	margin-top: 80px;
+}
+
+.footer {
+	margin: 0 auto;
+	text-align: center;
 }
