@@ -29,110 +29,48 @@ main {
 	margin: 0 auto;
 	padding: 20px;
 	text-align: center;
-	width: 80%;
+	width: 1200px;
 	box-shadow: 3px 2px 4px black;
 	background: white;
 }
 
-main h1 {
-	margin-bottom: 30px;
+main > h1 {
+	margin-bottom: 50px;
 }
 
-.example > button {
-	padding: 30px;
+
+.example > div {
+	height: 50px;
+	width: 50px;
+	padding: 50px;
 	background: blue;
 	color: white;
 	margin: 0 20px;
 	margin-bottom: 40px;
+	margin: 30px auto;
+	text-align: center;
 }
 
-.practice-button {
-	padding: 40px;
-	background: white;
-	border: 2px solid violet;
-	color: darkviolet;
-	transition: all .5s; 
+.global-perspective {
+	perspective: 800px;
 }
 
-.practice-button:hover {
-	transform: translate(50px, 20px);
+.global-perspective > div {
+	transform: rotateY(70deg);
 }
 
-.example > button:nth-of-type(1) {
-	transition-duration: 2s;
+.element-perspective > div {
+	transform: perspective(800px) rotateY(70deg);
 }
 
-
-.example > button:nth-of-type(1):hover {
-	transform: rotate(45deg);
+.big-perspective {
+	transform: perspective(800px) rotateY(60deg);
 }
 
-.example > button:nth-of-type(2) {
-	transition-duration: 2s;
+.complex-perspective {
+	perspective: 800px;
 }
 
-.example > button:nth-of-type(2):hover {
-	transform: rotate(-50deg);
-}
-
-.scaling {
-	padding: 30px 60px;
-	background: green;
-	border: 2px solid black;
-	color: darkviolet;
-	transition-duration: 2s; 
-}
-
-.scaling:hover {
-	transform: scale(0.4);
-}
-
-.skewingx {
-	padding: 30px 60px;
-	background: yellow;
-	border: 2px solid black;
-	color: darkviolet;
-	transition-duration: 2s;
-}
-
-.skewingx:hover {
-	transform: skewX(70deg);
-}
-
-.skewingy {
-	padding: 30px 60px;
-	background: gray;
-	border: 2px solid black;
-	color: darkviolet;
-	transition-duration: 2s;
-}
-
-.skewingy:hover {
-	transform: skewY(-30deg);
-}
-
-.matrix {
-	padding: 30px 60px;
-	background: brown;
-	border: 2px solid black;
-	color: darkviolet;
-	transition-duration: 2s;
-}
-
-.matrix:hover {
-	transform: matrix(1.2, 0.3, 0.2, 0.8, 20, 50);
-}
-
-.origin {
-	padding: 30px 60px;
-	background: black;
-	border: 2px solid black;
-	color: darkviolet;
-	transition-duration: 2s;
-}
-
-.origin:hover {
-	transform: rotateX(360deg);
-	transform-origin: 0 0;
-
+.small-perspective {
+	transform: perspective(200px) rotateY(60deg);
 }
