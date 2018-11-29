@@ -59,3 +59,31 @@ main > img:nth-of-type(3) {
 	filter: contrast(50%);
 	-webkit-filter: filter: contrast(50%);
 }
+
+.gradient {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	background: linear-gradient(190deg, yellow, black);
+}
+
+.radial {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	background: radial-gradient(at 100% 100%, yellow, black);
+}
+
+.repeating {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	background: repeating-linear-gradient(60deg, pink 5%, red 10%);
+}
+
+.last-gradient {
+	margin: 0 auto;
+	width: 600px;
+	height: 600px;
+	background: repeating-radial-gradient(circle, pink 5%, red 10%, blue 15%);
+}
